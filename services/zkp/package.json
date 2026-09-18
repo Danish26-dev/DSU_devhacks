@@ -1,0 +1,14 @@
+{
+  "name": "klaim-zkp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "KLAIM Midnight ZK proof microservice — runs the compiled Compact age_over_18 circuit.",
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node src/server.mjs"
+  },
+  "dependencies": {
+    "@midnight-ntwrk/compact-runtime": "0.19.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["src/licence.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAAA;;;;;;;;;;;;;MAcA,AAAA,cAKC;;;;;cAL6B,aAAqB;;;;;;;;;;;;;;;;;;yCAArB,aAAqB;;;;;;;;;sDAArB,aAAqB;;;;OAKlD;;;;GACA;EApBD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAQA;;;;;;;;;yEAA6B;;;;;;;GAY5B;EATD,AAAA,oBAAsC;;0DAAtC,iBAAsC;;;;;;;;;;;;;;GAAA;EAGtC,AAAA,uBAKC,4BAL6B,aAAqB;UAC3C,QAA4B;4BAC3B,QAAM,IAAI,aAAW;IAC5B;;;;;;;;;yEAAK;;GAEN;;;;;;;;;;;;;;;;IAXD;qCAAA;;;;;;;;;;;0GAA6B;KAAA;;;;;;;;;;;;;;;;"
+}

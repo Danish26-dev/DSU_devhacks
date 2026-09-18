@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["src/age.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAAA;;;;;;;;;;;;;MAoBA,AAAA,UAMC;;;;;cANyB,aAAqB;cAAE,WAAmB;;;;;;;;;;;;;;;;;;;;;;;;;yCAA1C,aAAqB,+BAAE,WAAmB;;;;;;;;;kDAA1C,aAAqB;kDAAE,WAAmB;;;;OAMnE;;;;GACA;EA3BD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IAYA;;;;;;;;;yEAAgC;;;;;;;GAe/B;EAXD,AAAA,mBAAqC;;0DAArC,gBAAqC;;;;;;;;;;;;;;GAAA;EAIrC,AAAA,mBAMC,4BANyB,aAAqB,EAAE,WAAmB;UAC5D,WAA8B;UAC9B,KAAyC,4BAAnC,aAAW,IAAG,WAAS;;mBAAvB,aAAW,GAAG,WAAS;4BAC5B,KAAG,IAAI,WAAS;;IACvB;;;;;;;;;yEAAQ;;GAET;;;;;;;;;;;;;;;;IAdD;qCAAA;;;;;;;;;;;0GAAgC;KAAA;;;;;;;;;;;;;;;;"
+}

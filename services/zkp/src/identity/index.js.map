@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "../../../../",
+  "sources": ["src/identity.compact"],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAAA;;;;;;;;;;;;;MAeA,AAAA,eAKC;;;;;cAL8B,gBAAwB;;;;;;;;;;;;;;;;;;yCAAxB,gBAAwB;;;;;;;;;uDAAxB,gBAAwB;;;;OAKtD;;;;GACA;EArBD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;IASA;;;;;;;;;yEAAgC;;;;;;;GAY/B;EATD,AAAA,sBAAwC;;0DAAxC,mBAAwC;;;;;;;;;;;;;;GAAA;EAGxC,AAAA,wBAKC,4BAL8B,gBAAwB;UAC/C,MAA4B;4BAC3B,MAAI,KAAI,gBAAc;;IAC7B;;;;;;;;;yEAAQ;;GAET;;;;;;;;;;;;;;;;IAXD;qCAAA;;;;;;;;;;;0GAAgC;KAAA;;;;;;;;;;;;;;;;"
+}
