@@ -1,0 +1,24 @@
+{
+  "name": "@klaim/idina",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "node --experimental-strip-types --watch src/index.ts",
+    "start": "node --experimental-strip-types src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@klaim/types": "workspace:*",
+    "@klaim/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.5",
+    "typescript": "^5.8.3"
+  },
+  "optionalDependencies": {
+    "@google/genai": "^0.14.0"
+  }
+}

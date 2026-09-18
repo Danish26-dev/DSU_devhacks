@@ -1,0 +1,20 @@
+# Cloud Build config for services/quickdrop-ui (standalone verifier UI on nginx).
+#
+# QuickDrop UI is self-contained (no @klaim workspace deps), so the Docker build
+# context is just the service folder. Run from the repo root:
+#
+#   gcloud builds submit --config cloudbuild.quickdrop-ui.yaml services/quickdrop-ui
+#
+# The API URL is baked into the bundle via build-arg (Vite inlines it). Pass an
+# empty value to run the deployed app in self-driving DEMO mode.
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - --build-arg
+      - VITE_KLAIM_API_URL=https://klaim-api-atnwarjo4q-el.a.run.app
+      - -t
+      - asia-south1-docker.pkg.dev/klaim-509005/cloud-run-source-deploy/quickdrop-ui:latest
+      - .
+images:
+  - asia-south1-docker.pkg.dev/klaim-509005/cloud-run-source-deploy/quickdrop-ui:latest

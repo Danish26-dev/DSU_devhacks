@@ -1,0 +1,18 @@
+# Cloud Build config for backend/klaim-api.
+#
+# The Dockerfile lives at backend/klaim-api/Dockerfile but the build context is
+# the REPO ROOT so the Bun workspace deps (@klaim/*) resolve. gcloud builds
+# submit does not accept -f, so we specify the Dockerfile via docker build -f.
+#
+#   gcloud builds submit --config cloudbuild.klaim-api.yaml .
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -f
+      - backend/klaim-api/Dockerfile
+      - -t
+      - asia-south1-docker.pkg.dev/klaim-509005/cloud-run-source-deploy/klaim-api:latest
+      - .
+images:
+  - asia-south1-docker.pkg.dev/klaim-509005/cloud-run-source-deploy/klaim-api:latest

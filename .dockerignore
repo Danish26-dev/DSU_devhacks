@@ -1,0 +1,14 @@
+# Keep the Docker build context lean and reproducible. Installs happen INSIDE
+# the image, so host node_modules / build output must not be copied in.
+**/node_modules
+**/dist
+**/.next
+**/coverage
+**/*.log
+.git
+.gitignore
+**/.env
+**/.env.local
+**/.DS_Store
+# Cloud Build / CI artifacts
+cloudbuild*.yaml

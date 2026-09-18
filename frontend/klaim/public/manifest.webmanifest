@@ -1,0 +1,16 @@
+{
+  "name": "KLAIM Identity",
+  "short_name": "KLAIM",
+  "description": "Prove claims about yourself without sharing your documents.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0d13",
+  "theme_color": "#0a0d13",
+  "icons": [
+    { "src": "/klaim-logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/klaim-logo.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

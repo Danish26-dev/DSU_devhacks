@@ -1,0 +1,16 @@
+{
+  "name": "QuickDrop Partners",
+  "short_name": "QuickDrop",
+  "description": "Become a delivery partner. Privacy-first verification powered by KLAIM.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#eef1fb",
+  "theme_color": "#6366f1",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

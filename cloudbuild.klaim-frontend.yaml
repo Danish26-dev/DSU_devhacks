@@ -1,0 +1,21 @@
+# Cloud Build config for frontend/klaim (PWA static site on nginx).
+#
+# Dockerfile is at frontend/klaim/Dockerfile but the build context is the REPO
+# ROOT so the @klaim/* workspace packages resolve.
+#
+#   gcloud builds submit --config cloudbuild.klaim-frontend.yaml .
+#
+# The API URL is baked into the bundle via build-arg (Vite inlines it).
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -f
+      - frontend/klaim/Dockerfile
+      - --build-arg
+      - VITE_KLAIM_API_URL=https://klaim-api-atnwarjo4q-el.a.run.app
+      - -t
+      - asia-south1-docker.pkg.dev/klaim-509005/cloud-run-source-deploy/klaim-frontend:latest
+      - .
+images:
+  - asia-south1-docker.pkg.dev/klaim-509005/cloud-run-source-deploy/klaim-frontend:latest
