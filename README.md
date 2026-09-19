@@ -13,6 +13,11 @@ KLAIM allows a verifier to request only the claims it needs, lets the user expli
 
 ---
 
+
+https://github.com/user-attachments/assets/43ff49d2-5518-49a9-8ec9-1702fcbf7f9e
+
+
+
 ## ✨ Why KLAIM?
 
 Digital services increasingly need identity verification.
