@@ -1,4 +1,4 @@
-````markdown
+
 # KLAIM
 
 ### Privacy-first identity verification infrastructure for applications, organizations, and AI agents.
@@ -66,7 +66,7 @@ Verifier receives the required claim
 
 > **Verify the claim, not the entire identity.**
 
----
+
 
 # 🎯 What KLAIM Solves
 
