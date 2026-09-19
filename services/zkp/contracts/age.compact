@@ -1,0 +1,27 @@
+pragma language_version 0.26;
+
+// KLAIM — age_over_18 zero-knowledge circuit.
+//
+// The subject's birth year is PRIVATE. It is supplied off-chain by the
+// `subjectBirthYear` witness and never leaves the prover. The circuit proves
+// only one public fact: that (currentYear - birthYear) >= 18.
+//
+// Public inputs:  currentYear, threshold (both known to the verifier)
+// Private input:  the birth year (via the witness)
+// Public output:  the boolean claim `verified`
+
+export ledger verified: Boolean;
+
+// Private data supplied by the JavaScript frontend (the subject's real birth
+// year). The chain/circuit never sees it directly.
+witness subjectBirthYear(): Uint<16>;
+
+// Prove: the subject is at least `threshold` years old as of `currentYear`,
+// without revealing the birth year.
+export circuit verify_age(currentYear: Uint<16>, threshold: Uint<16>): Boolean {
+  const birthYear = subjectBirthYear();
+  const age = currentYear - birthYear as Uint<16>;
+  assert(age >= threshold, "subject does not meet the age threshold");
+  verified = disclose(true);
+  return true;
+}

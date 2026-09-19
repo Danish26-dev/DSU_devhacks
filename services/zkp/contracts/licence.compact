@@ -1,0 +1,20 @@
+pragma language_version 0.26;
+
+// KLAIM — license_valid zero-knowledge circuit.
+//
+// The licence's EXPIRY YEAR is private (supplied by the witness) and never
+// leaves the prover. The circuit proves only that the licence is still valid,
+// i.e. expiryYear >= currentYear, without revealing when it actually expires.
+
+export ledger valid: Boolean;
+
+// Private: the licence expiry year. Never disclosed.
+witness licenceExpiryYear(): Uint<16>;
+
+// Prove the licence has not expired as of `currentYear`.
+export circuit verify_licence(currentYear: Uint<16>): Boolean {
+  const expiry = licenceExpiryYear();
+  assert(expiry >= currentYear, "licence has expired");
+  valid = disclose(true);
+  return true;
+}

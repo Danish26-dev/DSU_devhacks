@@ -1,0 +1,21 @@
+pragma language_version 0.26;
+
+// KLAIM — identity_verified zero-knowledge circuit.
+//
+// The credential carries a private identity ATTESTATION code, set by the issuer
+// to a known marker when the identity has been verified. The circuit proves the
+// credential holds the correct attestation marker WITHOUT revealing the code,
+// producing only the boolean `verified`.
+
+export ledger verified: Boolean;
+
+// Private: the issuer-set identity attestation code. Never disclosed.
+witness identityAttestation(): Uint<32>;
+
+// Prove the attestation matches the expected verified marker.
+export circuit verify_identity(expectedMarker: Uint<32>): Boolean {
+  const code = identityAttestation();
+  assert(code == expectedMarker, "identity attestation does not match");
+  verified = disclose(true);
+  return true;
+}
